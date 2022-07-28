@@ -1,0 +1,1 @@
+CREATE TABLE purchases (transaction_id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, company_symbol TEXT NOT NULL, company_name TEXT NOT NULL, company_shares NUMERIC NOT NULL, price NUMERIC NOT NULL, timestamp TEXT NOT NULL, buyer_id NUMERIC NOT NULL, FOREIGN KEY (buyer_id) REFERENCES users(id));
